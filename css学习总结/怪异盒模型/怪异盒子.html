@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding: 0;
+			}
+			div{
+				width:200px;
+				height: 200px;
+				background-color: yellowgreen;
+				padding: 20px;
+				/* 默认3px 颜色黑色 */
+				border:solid;
+				margin:30px;
+				/* 怪异盒子：见到的盒子宽度是200px */
+				/* box-sizing:border-box; */
+				/* 标准盒模型：见到的盒子宽度为260
+				 padding和border不被包含在width和height内，元素实际大小为宽高+border+padding*/
+				box-sizing: content-box;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 怪异盒子：
+		 组成部分：content+padding+border+margin
+		 实际宽度：width+margin(width包含了padding+border)-->
+		<div></div>
+	</body>
+</html>

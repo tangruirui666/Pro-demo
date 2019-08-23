@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #wrap {
+            width: 400px;
+            height: 400px;
+            border: 1px solid;
+            margin: 100px auto;
+            display: flex;
+        }
+        
+        #wrap>.item {
+            /* 未知宽度 */
+            height: 50px;
+            background-color: pink;
+            line-height: 50px;
+            /* flex-shrink: 1;
+            flex-grow: 1; */
+            /* 分配空间之前，将宽度清0  */
+            /* flex-basis: 0; */
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="item">ka</div>
+        <div class="item">2222</div>
+        <div class="item">33</div>
+        <div class="item">4666</div>
+        <div class="item">56787678</div>
+    </div>
+</body>
+
+</html>

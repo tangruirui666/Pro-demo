@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #wrap {
+            width: 400px;
+            height: 400px;
+            border: 1px solid;
+            margin: 100px auto;
+            display: -webkit-box;
+        }
+        
+        #wrap>.item {
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            line-height: 50px;
+            /* 弹性空间管理
+            将主轴上的富裕空间按比例分配到项目的width上 */
+            -webkit-box-flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="item">1111111111111111111222222222222222222222</div>
+        <div class="item">28776878777788888888888888888888888888</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+
+</html>

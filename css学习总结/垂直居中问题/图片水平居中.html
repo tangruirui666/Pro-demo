@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 基线偏难 了解即可，不必深究 */
+			*{
+				margin:0;
+				padding:0;
+			}
+			html,body{
+				/*  body撑开，拿到初始包含块，没有html,高度靠内容撑开*/
+				height: 100%;
+			}
+			body{
+				text-align: center;
+			}
+			body::after{
+				content: " ";
+				display: inline-block;
+				height: 100%;
+				vertical-align: middle;
+			}
+			img{
+				vertical-align: middle;
+				/* 倒影 但火狐用不了*/
+				-webkit-box-reflect: left;
+				
+			}
+		</style>
+	</head>
+	<body>
+			<img src="img/1.jpg" >
+	</body>
+</html>
